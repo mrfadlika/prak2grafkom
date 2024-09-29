@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run Praktikum2",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "Praktikum2", 
+                "movingDrawBicycle.cpp", 
+                "-I", "C:/MinGW/include",  
+                "-L", "C:/MinGW/lib",      
+                "-lbgi", "-lgdi32", "-lcomdlg32", "-luuid", "-loleaut32", "-lole32", "-static-libgcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build Praktikum2 project"
+        }
+    ]
+}
